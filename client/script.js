@@ -1,4 +1,4 @@
-const API = "http://localhost:4000";
+const API = "https://inventary-search.onrender.com";
 
   // Load all data on page load
   window.onload = () => {

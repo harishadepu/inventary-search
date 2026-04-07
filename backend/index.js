@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:"https://fantastic-taffy-b33dfb.netlify.app"}));
 
 /* =========================
    🔗 MongoDB Connection
