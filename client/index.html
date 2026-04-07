@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeerostock - Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Inventory Search</h2>
+
+        <input type="text" id="q" placeholder="Search product..." />
+        <div class="filter-container">
+            <select id="category">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Footwear">Footwear</option>
+            </select>
+
+            <input type="number" id="minPrice" placeholder="Min Price" />
+            <input type="number" id="maxPrice" placeholder="Max Price" />
+        </div>
+
+
+
+        <button onclick="search()">Search</button>
+
+        <p id="error" class="error"></p>
+
+        <div id="results" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
